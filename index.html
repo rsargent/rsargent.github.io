@@ -11,8 +11,8 @@ x = ["http://funnypicture.org/wallpaper/2015/03/funny-and-cute-cat-pictures-21-b
 <div id="pictures"></div>
 <script>
 $('#message').text('How are you?');
-$('#pictures').append('<img width=57% src="' + x[0] + '">');
-$('#pictures').append('<img height=47% src="' + x[1] + '">');
-$('#pictures').append('<img width=57% src="' + x[2] + '">');
+for (i = 0; i < x.length; i++) {
+     $('#pictures').append('<img width=54% src="' + x[i] + '">');
+}
 </script>
 </body>
